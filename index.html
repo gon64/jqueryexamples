@@ -20,16 +20,16 @@
 	<button onclick="$('#ejemplo3').addClass('azul')">Agregar clase</button>
 	<button onclick="$('#ejemplo3').removeClass('azul')">Eliminar clase</button>
 
-    Cambiar atributo src de una imagen
+    <p>Cambiar atributo src de una imagen</p>
 	<img id="ejemplo4" width=30px src="https://is1-ssl.mzstatic.com/image/thumb/Purple71/v4/55/ce/e8/55cee842-e134-ae88-41d3-25b7e2108bb0/source/512x512bb.jpg">
 	<button onclick="$('#ejemplo4').attr('src', 'https://static.vecteezy.com/system/resources/previews/005/738/763/original/head-cartoon-angry-panda-logo-design-icon-symbol-illustration-vector.jpg')">Cambiar imagen</button>
 
-    Cambiar contenido de formularios
+    <p>Cambiar contenido de formularios</p>
 	<input type="text" id="ejemplo5">
 	<button onclick="alert($('#ejemplo5').val())">Obtener valor</button>
 	<button onclick="$('#ejemplo5').val('Nuevo valor')">Establecer valor</button>
 
-	Agregar y eliminar elementos
+	<p>Agregar y eliminar elementos</p>
 	<ul id="ejemplo6">
 		<li>Elemento 1</li>
 		<li>Elemento 2</li>
@@ -38,7 +38,7 @@
 	<button onclick="$('#ejemplo6').append('<li>Elemento nuevo</li>')">Agregar elemento</button>
 	<button onclick="$('#ejemplo6 li:last-child').remove()">Eliminar último elemento</button>
 
-	Iterar sobre elementos
+	<p>Iterar sobre elementos</p>
 	<ul id="ejemplo7">
 		<li>Elemento 1</li>
 		<li>Elemento 2</li>
@@ -46,7 +46,7 @@
 	</ul>
 	<button onclick="$('#ejemplo7 li').each(function() { alert($(this).text()) })">Iterar elementos</button>
 
-	Agregar eventos
+	<p>eventos</p> 
 	<button id="ejemplo8">Haz clic aquí</button>
 	<script>
 		$('#ejemplo8').click(function() {
@@ -54,7 +54,7 @@
 		});
 	</script>
 
-	Animaciones
+	<p>Animaciones</p>
 	<div id="ejemplo9" style="width:100px;height:100px;background-color:red;"></div>
 	<button onclick="$('#ejemplo9').animate({width: '200px', height: '200px'}, 'slow')">Animar</button>
     
